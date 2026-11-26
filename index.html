@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muddasir Farooq</title>
+<meta name="description" content="Muddasir Farooq, chief financial officer and strategic finance leader in Riyadh. ACCA, ICAEW, CIA.">
+<meta property="og:title" content="Muddasir Farooq, CFO and strategic finance leader">
+<meta property="og:description" content="Chartered accountant (ACCA, ICAEW) and Certified Internal Auditor with 18+ years of finance leadership in Saudi Arabia and the GCC.">
+<meta property="og:image" content="img/portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: formal, calm, assured; a finance leader's profile, not a sales page
+   IDEA: an annual report's leadership page: portrait, figures in a ruled strip, a quiet timeline
+   PICTURE: his own portrait on a deep teal field, then real stage photos in a gallery
+   COLOUR and TYPE: white, ink #14161a, deep teal #0b5d63, rule grey; Libre Caslon Text + Inter
+   LAYOUT: name and portrait share the first screen, figures strip, then sections in one column grid */
+:root{color-scheme:light dark;
+--bg:light-dark(#ffffff,#0d1416);--ink:light-dark(#14161a,#e7ecea);--soft:light-dark(#4a5058,#a9b4b2);
+--teal:light-dark(#0b5d63,#6cc0bc);--field:light-dark(#0b5d63,#0f3f43);--rule:light-dark(#d9dddf,#25333a);
+--tint:light-dark(#f2f6f6,#121d20);--onfield:#f3f7f6}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:clip}
+img{display:block;max-width:100%}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1240px;margin:0 auto}
+.band{padding:clamp(36px,5vw,80px) max(5vw,16px)}
+h1,h2,h3{font-family:"Libre Caslon Text",Georgia,serif;font-weight:400;line-height:1.08;text-wrap:balance;margin:0}
+h2{font-size:clamp(30px,3.6vw,44px);margin-bottom:28px}
+h3{font-size:22px}
+p{margin:0 0 1em;max-width:66ch}
+.lede{color:var(--soft)}
+
+/* header */
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;padding:12px max(5vw,16px)}
+.mark{font-family:"Libre Caslon Text",Georgia,serif;font-size:19px;color:var(--ink);text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:4px 18px}
+nav a{color:var(--soft);text-decoration:none;font-size:15px;padding:10px 0}
+nav a:hover{color:var(--teal)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);min-height:min(640px,82vh)}
+.hero-text{padding:clamp(40px,6vw,96px) max(5vw,16px);display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:clamp(46px,6.4vw,84px);letter-spacing:-.01em;margin-bottom:18px}
+.role{font-family:"Libre Caslon Text",Georgia,serif;font-style:italic;font-size:clamp(20px,2vw,25px);color:var(--teal);margin-bottom:22px}
+.creds{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 28px;padding:0;list-style:none}
+.creds li{border:1px solid var(--rule);border-radius:999px;padding:5px 14px;font-size:14px;font-weight:500}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;min-height:46px;padding:0 22px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--teal)}
+.btn.primary{background:var(--teal);color:var(--bg)}
+.btn.ghost{color:var(--teal)}
+.hero-pic{background:var(--field);position:relative;overflow:hidden}
+.hero-pic::before{content:"";position:absolute;inset:auto -20% -30% auto;width:70%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.14),transparent 65%)}
+.hero-pic img{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:88%;width:min(80%,470px);object-fit:cover;object-position:62% 25%;border-radius:4px 4px 0 0;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+
+/* figures */
+.figs{border-block:1px solid var(--rule)}
+.figs .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.fig{padding:26px max(2vw,16px);border-inline-start:1px solid var(--rule)}
+.fig:first-child{border:0}
+.fig b{display:block;font-family:"Libre Caslon Text",Georgia,serif;font-weight:400;font-size:clamp(30px,3.4vw,42px);color:var(--teal);white-space:nowrap;line-height:1.1}
+.fig span{font-size:14px;color:var(--soft)}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,5vw,80px)}
+.about .pull{font-family:"Libre Caslon Text",Georgia,serif;font-size:clamp(22px,2.3vw,29px);line-height:1.35}
+
+/* experience */
+.tint{background:var(--tint)}
+.jobs{list-style:none;margin:0;padding:0}
+.job{display:grid;grid-template-columns:200px minmax(0,1fr);gap:8px 40px;padding:28px 0;border-top:1px solid var(--rule)}
+.job:last-child{border-bottom:1px solid var(--rule)}
+.when{font-size:14px;color:var(--soft);font-weight:500;white-space:nowrap}
+.org{color:var(--teal);font-weight:500;margin:4px 0 6px}
+.scale{font-size:14.5px;color:var(--soft);margin-bottom:10px}
+.job ul{margin:0;padding-inline-start:18px}
+.job li{margin-bottom:4px;max-width:70ch}
+
+/* results */
+.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:0;border-top:1px solid var(--rule)}
+.result{padding:24px 24px 24px 0;border-bottom:1px solid var(--rule)}
+.result b{display:block;font-family:"Libre Caslon Text",Georgia,serif;font-weight:400;font-size:28px;color:var(--teal);margin-bottom:4px}
+
+/* speaking */
+.gallery{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;scrollbar-width:thin}
+.gallery figure{flex:0 0 min(78%,560px);margin:0;scroll-snap-align:start}
+.gallery img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:4px}
+.gallery figcaption{font-size:14px;color:var(--soft);padding-top:8px}
+.gal-bar{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.gal-bar h2{margin:0}
+.gal-btns{display:flex;gap:8px}
+.gal-btns button{width:46px;height:46px;border-radius:50%;border:1px solid var(--rule);background:var(--bg);color:var(--ink);font-size:20px;cursor:pointer}
+.gal-btns button:hover{border-color:var(--teal);color:var(--teal)}
+.talks{list-style:none;padding:0;margin:40px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:0 48px}
+.talks li{padding:18px 0;border-top:1px solid var(--rule)}
+.talks .when{display:block;margin-bottom:2px}
+.talks strong{font-weight:600}
+.talks em{font-family:"Libre Caslon Text",Georgia,serif}
+
+/* expertise */
+.cols{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(28px,5vw,80px)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.tags li{background:var(--tint);border:1px solid var(--rule);border-radius:4px;padding:8px 14px;font-size:15px}
+.quals{list-style:none;padding:0;margin:0}
+.quals li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--rule)}
+.quals li span:last-child{color:var(--soft);white-space:nowrap}
+h3.small{font-family:Inter,system-ui,sans-serif;font-size:15px;font-weight:600;color:var(--soft);margin:28px 0 12px}
+
+/* contact */
+.contact{background:var(--field);color:var(--onfield)}
+.contact .wrap{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.contact img{width:180px;height:180px;object-fit:cover;object-position:50% 20%;border-radius:50%;border:3px solid rgba(255,255,255,.3)}
+.contact h2{color:var(--onfield);margin-bottom:12px}
+.contact p{color:rgba(243,247,246,.85)}
+.contact a{color:var(--onfield)}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.links .btn{border-color:rgba(255,255,255,.55);color:var(--onfield)}
+.links .btn.primary{background:var(--onfield);color:#0b5d63;border-color:var(--onfield)}
+footer{padding:24px max(5vw,16px);font-size:14px;color:var(--soft)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+
+@media(prefers-reduced-motion:no-preference){
+.rise{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.rise.in{opacity:1;transform:none}}
+@media(max-width:900px){
+.hero{grid-template-columns:minmax(0,1fr);min-height:0}
+.hero-pic{min-height:440px}
+.figs .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+.fig:nth-child(3){border:0}.fig:nth-child(n+3){border-top:1px solid var(--rule)}
+.about,.cols{grid-template-columns:minmax(0,1fr)}
+.job{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){
+nav{gap:2px 14px}nav a{font-size:14px}
+.hero-pic{min-height:380px}
+.contact .wrap{grid-template-columns:minmax(0,1fr)}
+.contact img{width:120px;height:120px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="mark" href="#top">Muddasir Farooq</a>
+  <nav aria-label="Sections">
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#speaking">Speaking</a><a href="#expertise">Expertise</a><a href="#contact">Contact</a>
+  </nav>
+</div></header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-text">
+    <h1>Muddasir Farooq</h1>
+    <p class="role">Chief financial officer and strategic finance leader</p>
+    <p class="lede">Chartered accountant and Certified Internal Auditor with more than 18 years in Big Four audit, NYSE listed multinationals and CFO roles across Saudi Arabia and the GCC. Based in Riyadh.</p>
+    <ul class="creds" aria-label="Qualifications"><li>ACCA Fellow</li><li>ICAEW</li><li>CIA</li><li>IFRS and US GAAP</li></ul>
+    <div class="actions">
+      <a class="btn primary" href="#contact">Get in touch</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/muddasir-farooq" target="_blank" rel="noopener">LinkedIn profile</a>
+    </div>
+  </div>
+  <div class="hero-pic"><img src="img/portrait.jpg" alt="Portrait of Muddasir Farooq in a grey suit" width="900" height="915"></div>
+</section>
+
+<section class="figs" aria-label="Career in figures"><div class="wrap">
+  <div class="fig"><b>18+</b><span>years in audit and finance leadership</span></div>
+  <div class="fig"><b>SAR 1.3bn</b><span>annual turnover at Emdad by Elm</span></div>
+  <div class="fig"><b>SAR 500M</b><span>business led as CFO at Barns</span></div>
+  <div class="fig"><b>800</b><span>retail outlets under his finance remit</span></div>
+</div></section>
+
+<section class="band" id="about"><div class="wrap about rise">
+  <div>
+    <h2>About</h2>
+    <p class="pull">I want finance to give management a clear answer early, while there is still time to act on it.</p>
+  </div>
+  <div>
+    <p>I started my career at EY in Riyadh and spent almost six years auditing clients in hospitality, manufacturing, banking and construction. That time gave me a habit I still rely on. I look at the numbers the way an auditor would before anyone else has to.</p>
+    <p>At Otis and Carrier I worked inside US listed groups, running internal audit and SOX reviews across the Gulf and reporting under both US GAAP and IFRS. I then moved into finance leadership in Saudi manufacturing and retail. As CFO of Barns I reported to the board on a SAR 500 million business with three coffee plants and around 800 outlets, and prepared the company for its IPO process.</p>
+    <p>Today I am Finance Advisor at Emdad by Elm, where my work covers group consolidation, technical IFRS judgments and the relationship with the external auditors. My longer term goal is to serve on a board.</p>
+  </div>
+</div></section>
+
+<section class="band tint" id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <ol class="jobs" id="jobs"></ol>
+</div></section>
+
+<section class="band"><div class="wrap rise">
+  <h2>Selected results</h2>
+  <div class="results">
+    <div class="result"><b>SAR 3M</b>saved in production cost by adjusting manpower during the off season at a food manufacturer.</div>
+    <div class="result"><b>SAR 1M</b>cut from the payment gap through supplier instalment terms and customer advance payments.</div>
+    <div class="result"><b>IPO</b>readiness preparations led at Barns, aligning finance processes and reporting with regulatory requirements.</div>
+    <div class="result"><b>First</b>consolidated financial statements for an Elm Group holding company, prepared on two bases to support the audit decision.</div>
+    <div class="result"><b>Bahrain</b>branch office and retail business set up, with its own financial strategy and controls.</div>
+    <div class="result"><b>VAT</b>implemented for Carrier in Saudi Arabia and the UAE, alongside SOX control assessments across Gulf entities.</div>
+  </div>
+</div></section>
+
+<section class="band tint" id="speaking"><div class="wrap">
+  <div class="gal-bar">
+    <h2>Speaking and recognition</h2>
+    <div class="gal-btns"><button type="button" id="prev" aria-label="Previous photo">&#8592;</button><button type="button" id="next" aria-label="Next photo">&#8594;</button></div>
+  </div>
+  <div class="gallery" id="gallery" tabindex="0" aria-label="Photos from speaking events">
+    <figure><img src="img/brics-2024-solo.jpg" alt="Muddasir Farooq speaking on stage at the BRICS Urban Future Forum" loading="lazy"><figcaption>BRICS Urban Future Forum, Russia, 2024</figcaption></figure>
+    <figure><img src="img/cfo50.jpg" alt="CFO50 honourees on stage holding the CFO50 publication" loading="lazy"><figcaption>CFO50 Saudi Arabia, 50 finance leaders to watch</figcaption></figure>
+    <figure><img src="img/cfo-summit-2024.jpg" alt="Muddasir Farooq speaking on a panel at the CFO Vision and Innovation Summit" loading="lazy"><figcaption>CFO Vision and Innovation Summit, Middle East edition, 2024</figcaption></figure>
+    <figure><img src="img/brics-2024-panel.jpg" alt="Panel discussion at the BRICS Urban Future Forum" loading="lazy"><figcaption>Panel on payment services and city financial infrastructure, BRICS forum 2024</figcaption></figure>
+    <figure><img src="img/cfo-summit-certificate.jpg" alt="Muddasir Farooq receiving a certificate of appreciation" loading="lazy"><figcaption>Certificate of appreciation as a speaker, CFO Vision and Innovation Summit 2024</figcaption></figure>
+  </div>
+  <ul class="talks">
+    <li><span class="when">Sep 2025 · Russia</span><strong>BRICS Urban Future Forum</strong>, speaker in two sessions: <em>Algorithms in Power: Strategies for the AI Era</em> and <em>Algorithm Based Design: How Technologies Teach You to Be More Creative</em></li>
+    <li><span class="when">Sep 2024 · Russia</span><strong>BRICS Urban Future Forum</strong>, panellist on Face Pay, payment services and the financial infrastructure of cities</li>
+    <li><span class="when">2024 · Middle East</span><strong>CFO Vision and Innovation Summit and Awards</strong>, speaker</li>
+    <li><span class="when">Saudi Arabia</span><strong>CFO50</strong>, named among 50 finance leaders to watch</li>
+    <li><span class="when">Oct 2023 · Riyadh</span><strong>CFO panel</strong>: <em>The CFO's Evolving Role in Building Future Ready Businesses</em></li>
+    <li><span class="when">Apr 2023</span><strong>AB Magazine</strong>, interview</li>
+  </ul>
+</div></section>
+
+<section class="band" id="expertise"><div class="wrap cols rise">
+  <div>
+    <h2>Expertise</h2>
+    <ul class="tags">
+      <li>Strategic finance and business partnering</li><li>Budgeting and forecasting</li><li>Treasury and working capital</li><li>Bank financing</li>
+      <li>IFRS and US GAAP reporting</li><li>Group consolidation</li><li>IPO readiness</li><li>Internal controls and SOX</li>
+      <li>Internal and external audit</li><li>Zakat, VAT and WHT with ZATCA</li><li>ERP implementation</li><li>Financial modelling</li><li>Process automation and BI</li>
+    </ul>
+    <h3 class="small">Systems</h3>
+    <ul class="tags"><li>SAP</li><li>Oracle</li><li>Microsoft Dynamics</li><li>Odoo</li><li>Hyperion</li></ul>
+  </div>
+  <div>
+    <h2>Qualifications</h2>
+    <ul class="quals">
+      <li><span>ICAEW Chartered Accountant, England and Wales</span><span>2021</span></li>
+      <li><span>ACCA Certificate in Digital Innovation in Finance</span><span>2021</span></li>
+      <li><span>CIA, Certified Internal Auditor, IIA</span><span>2019</span></li>
+      <li><span>ACCA, Association of Chartered Certified Accountants</span><span>2009</span></li>
+    </ul>
+    <h3 class="small">Languages</h3>
+    <p>English, Arabic and Urdu</p>
+  </div>
+</div></section>
+
+<section class="band contact" id="contact"><div class="wrap">
+  <img src="img/headshot.jpg" alt="Headshot of Muddasir Farooq" loading="lazy">
+  <div>
+    <h2>Get in touch</h2>
+    <p>I am open to conversations about CFO and board roles. For speaking invitations and advisory work, email is the best way to reach me.</p>
+    <p>Email: <a href="mailto:muddasirfarooq@gmail.com">muddasirfarooq@gmail.com</a><br>Riyadh, Saudi Arabia</p>
+    <div class="links">
+      <a class="btn primary" href="mailto:muddasirfarooq@gmail.com">Send an email</a>
+      <a class="btn" href="https://www.linkedin.com/in/muddasir-farooq" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Muddasir Farooq</span><span>Riyadh, Saudi Arabia</span></div></footer>
+
+<script>
+{
+const jobs=[
+ {when:"Oct 2024 to present",title:"Finance Advisor",org:"Emdad by Elm",scale:"HR services company wholly owned by Elm. SAR 1,300M turnover, 5,000+ employees, 16 member finance team.",pts:["Prepared the first consolidated financial statements for an Elm Group holding company across four entities, including quarterly interim consolidations.","Leads technical IFRS work on IFRS 15, IFRS 16, IFRS 3, IFRS 9 and the IFRS 18 impact assessment, and reclassified the Workforce Solutions segment from principal to agent.","Main contact for the external auditors, and owner of the group accounting policies manual and Zakat calculation.","Validated opening balances for the migration to a new ERP system."]},
+ {when:"Dec 2021 to Oct 2024",title:"Chief Financial Officer, Saudi Arabia and Bahrain",org:"Al Amjaad Trading and Manufacturing (Barns)",scale:"Three coffee processing plants and about 800 drive thru and dine in outlets. SAR 500M turnover, 1,000+ employees, 16 member finance team.",pts:["Reported to the board on financial performance and presented the annual budget for board approval.","Negotiated working capital financing with banks and evaluated investment opportunities with financial institutions.","Steered preparations for the IPO process and oversaw ERP integration in finance.","Set up the Bahrain branch office and retail business."]},
+ {when:"Sep 2019 to Nov 2021",title:"Finance Manager",org:"Ayan for Commerce and Industry (National Foodstuff Manufacturing)",scale:"Pasta plant and a cake and sweets mixing and packing facility. SAR 25M turnover, about 200 employees.",pts:["Achieved SAR 3M in production cost savings by adjusting manpower during the off season.","Reduced the payment gap by SAR 1M and renegotiated loan and lease repayment terms with lenders."]},
+ {when:"Nov 2017 to Aug 2019",title:"Assistant Finance Controller, GCC",org:"Carrier",scale:"NYSE listed HVAC manufacturer. Saudi operations turnover of SAR 650M, regional head office in Dubai.",pts:["Monthly group reporting through Hyperion under US GAAP, with IFRS for statutory accounts.","Led VAT implementation in Saudi Arabia and the UAE and ran SOX control testing across GCC entities."]},
+ {when:"Mar 2013 to Oct 2017",title:"Internal Audit Manager, Saudi Arabia and UAE",org:"Otis Elevator Company",scale:"NYSE listed elevator and escalator leader. Saudi operations turnover of SAR 350M.",pts:["Led financial, operational, IT and compliance audits and SOX reviews for Gulf entities in Saudi Arabia, Dubai and Kuwait.","Established the branch audit method used across the region and audited Otis entities in Singapore and Thailand."]},
+ {when:"Sep 2007 to Mar 2013",title:"Assistant Manager, Audit and Assurance",org:"EY (Ernst & Young)",scale:"Riyadh office.",pts:["Audited clients in hospitality, manufacturing, services, construction and financial services, including SADAD Payment Systems, Samba Capital, Al Rajhi Funds, ABB and Hewlett Packard Saudi Arabia."]}
+];
+const esc=s=>s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+document.getElementById('jobs').innerHTML=jobs.map(j=>`<li class="job rise"><div class="when">${esc(j.when)}</div><div><h3>${esc(j.title)}</h3><div class="org">${esc(j.org)}</div><div class="scale">${esc(j.scale)}</div><ul>${j.pts.map(p=>`<li>${esc(p)}</li>`).join('')}</ul></div></li>`).join('');
+
+const g=document.getElementById('gallery');
+const step=d=>{const f=g.querySelector('figure');const w=f?f.getBoundingClientRect().width+16:400;g.scrollBy({left:d*w,behavior:'smooth'})};
+document.getElementById('prev').addEventListener('click',()=>step(-1));
+document.getElementById('next').addEventListener('click',()=>step(1));
+g.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();step(1)}if(e.key==='ArrowLeft'){e.preventDefault();step(-1)}});
+
+const items=document.querySelectorAll('.rise');
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  items.forEach(el=>io.observe(el));
+}else items.forEach(el=>el.classList.add('in'));
+}
+</script>
+</body>
+</html>
