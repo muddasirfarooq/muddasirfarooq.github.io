@@ -103,6 +103,12 @@ nav a:hover{color:var(--teal)}
 .talks strong{font-weight:600}
 .talks em{font-family:"Libre Caslon Text",Georgia,serif}
 
+/* publications */
+.pub{display:grid;grid-template-columns:200px minmax(0,1fr);gap:8px 40px;padding:28px 0;border-block:1px solid var(--rule)}
+.pub h3{margin-bottom:8px}.pub h3 a{color:var(--ink);text-decoration:none}.pub h3 a:hover{color:var(--teal)}
+.pub .venue{color:var(--teal);font-weight:500;margin-bottom:8px}
+@media(max-width:900px){.pub{grid-template-columns:minmax(0,1fr)}}
+
 /* expertise */
 .cols{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(28px,5vw,80px)}
 .tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
@@ -146,7 +152,7 @@ nav{gap:2px 14px}nav a{font-size:14px}
 <header><div class="wrap">
   <a class="mark" href="#top">Muddasir Farooq</a>
   <nav aria-label="Sections">
-    <a href="#about">About</a><a href="#experience">Experience</a><a href="#speaking">Speaking</a><a href="#expertise">Expertise</a><a href="#contact">Contact</a>
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#speaking">Speaking</a><a href="#publications">Publications</a><a href="#expertise">Expertise</a><a href="#contact">Contact</a>
   </nav>
 </div></header>
 
@@ -223,7 +229,20 @@ nav{gap:2px 14px}nav a{font-size:14px}
   </ul>
 </div></section>
 
-<section class="band" id="expertise"><div class="wrap cols rise">
+<section class="band" id="publications"><div class="wrap rise">
+  <h2>Publications</h2>
+  <article class="pub">
+    <div class="when">Feb 2025</div>
+    <div>
+      <h3><a href="https://doi.org/10.36948/ijfmr.2025.v07i01.36379" target="_blank" rel="noopener">The Future of Financial Close: Leveraging AI and Machine Learning for Faster, More Accurate Financial Reporting</a></h3>
+      <div class="venue">International Journal For Multidisciplinary Research (IJFMR), Volume 7, Issue 1</div>
+      <p>How AI and machine learning can take over routine close work such as reconciliations and journal entries, so that finance teams report sooner with fewer errors and spend more of their time on analysis.</p>
+      <a href="https://doi.org/10.36948/ijfmr.2025.v07i01.36379" target="_blank" rel="noopener">DOI 10.36948/ijfmr.2025.v07i01.36379</a>
+    </div>
+  </article>
+</div></section>
+
+<section class="band tint" id="expertise"><div class="wrap cols rise">
   <div>
     <h2>Expertise</h2>
     <ul class="tags">
